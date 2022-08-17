@@ -1,51 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Produtos - Barbearia Alura</title>
-    <link rel="stylesheet" href="produtos.css">
-    
-  </head>
-  <body>
-    <header>
-      <h1><img src="https://cdn1.gnarususercontent.com.br/1/1125050/6e04bde8-5872-4d1d-8f26-fdb181dfaced.png"></h1> <nav>
-      <ul>
-        <li><a href="Barbearia Alura">Home</a></li>
-        <li><a href ="produtos.html">Produtos</a></li>
-        <li><a href="http://www.google.com"> Contato</a></li>
-      </ul>
-      </nav>
-      
-    </header>
-    <main>
-      <ul class="produtos">
-        <li>
-          <h2>Cabelo</h2>
-          <img src="https://angelicaalbuquerque.github.io/barbearia_alura/cabelo.jpg">
-          <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
-          <p class="produto-preco">R$25,00</p>
-        </li>
-        
-        
-        <li>
-          <h2>Barba</h2>
-          <img src="data:image/png;base64,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">
-          <p class="produto-descricao">   Corte e desenho profissional de barba</p>
-          <p class="produto-preco">R$18,00</p>
-        </li>
-        
-        
-        <li>
-          <h2>Cabelo + Barba</h2>
-          <img src="data:image/png;base64,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">
-          <p class="produto-descricao">Pacote completo de cabelo e barba</p>
-  <p class="produto-preco">R$35,00</p>
-        </li>
-      </ul>
-      </main>
-    <footer>
-      <img src="https://cdn1.gnarususercontent.com.br/1/905642/8a56fc6e-66af-4b03-9180-f2195f7b9983.png">
-      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-    </footer>
-  </body>
-  </html>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <title>Produtos - Barbearia Alura</title>
+      <link rel="stylesheet" href="produtos.css">
+    </head>
+    <body>
+      <header>
+        <div class="caixa"
+        <h1><img src="https://smee.com.br/mario/logo.png"></h1>
+        <nav>
+          <ul>
+            <li><a href="https://990felipe.github.io/alurabarbearia/">Home</a></li>
+            <li><a href="https://990felipe.github.io/alura-produtos/">Produtos</a></li>
+            <li><a href="https://www.google.com.br/maps">Contato</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+<main>
+  <ul class="produtos">
+      <li>
+        <h2>Cabelo</h2>
+        <img src="https://angelicaalbuquerque.github.io/barbearia_alura/cabelo.jpg">
+        <p class="produtos-descrição">Na tesoura ou máquina, como o cliente preferir</p>
+        <p class="produtos-preco">R$ 25,00</p>
+    </li>
+       <li>
+        <h2>Barba</h2>
+        <img src="https://angelicaalbuquerque.github.io/barbearia_alura/barba.jpg">
+        <p class="produtos-descrição">Corte e desenho profissional da barba</p>
+        <p class="produtos-preco">R$ 18,00</p>
+    </li>
+       <li>
+        <h2>Cabelo + Barba</h2>
+        <img src="https://angelicaalbuquerque.github.io/barbearia_alura/cabelo+barba.jpg">
+        <p class="produtos-descrição">Pacote completo de cabelo e barba</p>
+        <p class="produtos-preco">R$ 35,00</p>
+    </li>
+    </main>
+  <footer>
+    <img src="https://smee.com.br/mario/.png">
+    <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+  </footer>
+    </body>
+  </html> 
